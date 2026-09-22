@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email 訂閱電子報</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f8fc;
+      font-family: Arial, "Noto Sans TC", sans-serif;
+    }
+
+    /* Email 訂閱元件 */
+    .email-form {
+      white-space: nowrap;
+    }
+
+    .email {
+      width: 390px;
+      height: 64px;
+      padding: 0 28px;
+      border: 2px solid #b8d0e5;
+      border-radius: 12px 0 0 12px;
+      outline: none;
+      font-size: 24px;
+      color: #333;
+      vertical-align: middle;
+    }
+
+    .email::placeholder {
+      color: #999;
+    }
+
+    .email:focus {
+      border-color: #69a8df;
+    }
+
+    .email-btn {
+      height: 64px;
+      padding: 0 42px;
+      margin-left: -2px;
+      border: 2px solid #3180d4;
+      border-radius: 0 12px 12px 0;
+      background-color: #3180d4;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      vertical-align: middle;
+    }
+
+    .email-btn:hover {
+      background-color: #276fbf;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="email-form">
+    <input
+      type="email"
+      class="email"
+      placeholder="輸入 Email..."
+      aria-label="輸入 Email"
+    >
+    <button type="button" class="email-btn">訂閱</button>
+  </div>
+
+</body>
+</html>
