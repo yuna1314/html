@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
@@ -22,7 +23,8 @@
 
     /* Email 訂閱元件 */
     .email-form {
-      white-space: nowrap;
+      display: flex;
+      align-items: center;
     }
 
     .email {
@@ -30,11 +32,11 @@
       height: 64px;
       padding: 0 28px;
       border: 2px solid #b8d0e5;
+      border-right: none;
       border-radius: 12px 0 0 12px;
       outline: none;
       font-size: 24px;
       color: #333;
-      vertical-align: middle;
     }
 
     .email::placeholder {
@@ -48,14 +50,12 @@
     .email-btn {
       height: 64px;
       padding: 0 42px;
-      margin-left: -2px;
       border: 2px solid #3180d4;
       border-radius: 0 12px 12px 0;
       background-color: #3180d4;
       color: white;
       font-size: 24px;
       cursor: pointer;
-      vertical-align: middle;
     }
 
     .email-btn:hover {
@@ -72,9 +72,9 @@
       class="email"
       placeholder="輸入 Email..."
       aria-label="輸入 Email"
-    >
-    <button type="button" class="email-btn">訂閱</button>
+    ><button type="button" class="email-btn">訂閱</button>
   </div>
 
 </body>
 </html>
+```
